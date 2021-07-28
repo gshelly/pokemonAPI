@@ -11,11 +11,11 @@ const PokemonAPI = (props) => {
   }, []);
 
   return (
-    <div>
+    <ul>
       {names.map((pokemonName, index) => {
-        return (<div key={index}> {pokemonName.name} </div>)
+        return (<li key={index}> {pokemonName.name} </li>)
       })}
-    </div>
+    </ul>
   );
 }
 
